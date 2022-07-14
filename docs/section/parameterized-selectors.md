@@ -28,8 +28,6 @@ Add your selector in the `selector=""` attribute:
 </section>
 ```
 
-<!-- {% raw %} -->
-
 ### Selector with single variable
 
 For the parameterized part of the selector, add `{{var1}}` to represent the first piece of data that you want to replace:
@@ -72,9 +70,9 @@ For the parameterized part of the selector, add `{{var1}}, {{var2}}, ..., {{varN
 </section>
 ```
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
+
 There is no need to use sequential variables like `{{var1}}`, `{{var2}}`. Parameterized replacement reads variables and maps them to the test call of the element sequentially from left to right, meaning you can use a selector like `#element .{{categoryId}} .{{productId}}`."
-</div>
 
 ## Use a parameterized selector in a test
 
@@ -141,8 +139,6 @@ Add the second or third parameters, that you'd like to pass to the selector, sep
     <click selector="{{SampleSection.threeParamElement(_defaultCategory.is_active,'StringLiteral',$createDataKey.id$)}}" stepKey="click1"/>
 </test>
 ```
-
-<!-- {% endraw %} -->
 
 Any data can be used in parameterized elements, as well as entered in test actions:
 

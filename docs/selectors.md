@@ -7,7 +7,7 @@ These guidelines should help you to write high quality selectors.
 CSS is generally easier to read than XPath. For example, `//*[@id="foo"]` in XPath can be expressed as simply as `#foo` in CSS.
 See this [XPath Cheatsheet](https://devhints.io/xpath) for more examples.
 
-### XPath selectors SHOULD NOT use `@attribute="foo"`. 
+### XPath selectors SHOULD NOT use `@attribute="foo"`.
 
 This would fail if the attribute was `attribute="foo bar"`.
 Instead you SHOULD use `contains(@attribute, "foo")` where `@attribute` is any valid attribute such as `@text` or `@class`.

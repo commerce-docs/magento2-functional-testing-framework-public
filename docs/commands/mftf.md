@@ -128,6 +128,7 @@ vendor/bin/mftf build:project --MAGENTO_BASE_URL=http://magento.local/ --MAGENTO
 #### Description
 
 Diagnose MFTF configuration and setup. Currently this command will check the following:
+
 - Verify admin credentials are valid. Allowing MFTF authenticates and runs API requests to Magento through cURL
 - Verify that Selenium is up and running and available for MFTF
 - Verify that new session of browser can open Magento admin and store front urls
@@ -383,7 +384,7 @@ vendor/bin/mftf run:test LoginCustomerTest StorefrontCreateCustomerTest
 
 Runs a testManifest.txt file.
 
-This command runs all tests specified in a testManifest.xml file. It does not generate tests for you. You must do that as first. 
+This command runs all tests specified in a testManifest.xml file. It does not generate tests for you. You must do that as first.
 
 #### Usage
 
@@ -393,9 +394,9 @@ vendor/bin/mftf run:manifest path/to/your/testManifest.txt
 
 #### Example testManifest.xml file
 
-Each line should contain either: one test path or one group (-g) reference.
+Each line should contain either one test path or one group (-g) reference.
 
-```
+```text
 tests/functional/tests/MFTF/_generated/default/AdminLoginTestCest.php
 -g PaypalTestSuite
 tests/functional/tests/MFTF/_generated/default/SomeOtherTestCest.php
@@ -415,6 +416,7 @@ For more details about `failed`, refer to [Reporting][].
 ```bash
 vendor/bin/mftf run:failed
 ```
+
 #### Options
 
 | Option                | Description                                                                                               |
@@ -464,7 +466,7 @@ The example parameters are taken from the `etc/config/.env.example` file.
 
 ### `static-checks`
 
-Runs all or specific MFTF static-checks on the test codebase that MFTF is currently attached to. 
+Runs all or specific MFTF static-checks on the test codebase that MFTF is currently attached to.
 If no script name argument is specified, all existing static check scripts will run.
 
 #### Usage
@@ -481,7 +483,7 @@ To check what existing static check scripts are available
 vendor/bin/mftf static-checks --help
 ```
 
-To run all existing static check scripts 
+To run all existing static check scripts
 
 ```bash
 vendor/bin/mftf static-checks
@@ -492,18 +494,20 @@ To run specific static check scripts
 ```bash
 vendor/bin/mftf static-checks testDependencies
 ```
+
 ```bash
 vendor/bin/mftf static-checks actionGroupArguments
 ```
+
 ```bash
 vendor/bin/mftf static-checks testDependencies actionGroupArguments
 ```
 
 #### Existing static checks
 
-* Test Dependency: Checks that test dependencies do not violate Magento module's composer dependencies.
-* Action Group Unused Arguments: Checks that action groups do not have unused arguments.
-    
+- Test Dependency: Checks that test dependencies do not violate Magento module's composer dependencies.
+- Action Group Unused Arguments: Checks that action groups do not have unused arguments.
+
 ### `upgrade:tests`
 
 Applies all the MFTF major version upgrade scripts to test components in the given path (`test.xml`, `data.xml`, etc).

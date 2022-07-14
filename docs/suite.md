@@ -9,9 +9,9 @@ Each suite must be defined in the `<VendorName>/<ModuleName>/Test/Mftf/Suite` di
 The tests for each suite are generated in a separate directory under `<magento 2 root>/dev/tests/acceptance/tests/functional/Magento/FunctionalTest/_generated/`.
 All tests that are not within a suite are generated in the _default_ suite at `.../Magento/FunctionalTest/_generated/default/`.
 
-<div class="bs-callout bs-callout-info">
- If a test is generated into at least one custom suite, it will not appear in the _default_ suite.
-</div>
+<InlineAlert variant="info" slots="text"/>
+
+If a test is generated into at least one custom suite, it will not appear in the _default_ suite.
 
 ## Format
 
@@ -49,7 +49,7 @@ The format of a suite:
        The suite name `skip` is synonymous to including a test in the `<group value="skip"/>`, which will be deprecated in MFTF 3.0.0.
     -  can contain letters, numbers, and underscores.
     -  should be upper camel case.
-    
+
 -  A suite must contain at least one `<include>`, or one `<exclude>`, or both.
 -  Using `<before>` in a suite, you must add the corresponding `<after>` to restore the initial state of your testing instance.
 
@@ -94,8 +94,6 @@ There are several ways to generate and execute your new test in the context of a
 
 ### Enabling/disabling WYSIWYG in suite conditions
 
-<!-- {% raw %} -->
-
 ```xml
 <suites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../dev/tests/acceptance/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Suite/etc/suiteSchema.xsd">
     <suite name="WYSIWYG">
@@ -122,16 +120,15 @@ There are several ways to generate and execute your new test in the context of a
 </suites>
 ```
 
-<!-- {% endraw %} -->
 This example declares a suite with the name `WYSIWYG`.
-The suite enables WYSIWYG *before* running tests.
+The suite enables WYSIWYG _before_ running tests.
 It performs the following steps:
 
 1. Log in to the backend.
 2. Navigate to the **Configuration** page.
 3. Enable **WYSIWYG** in the Magento instance.
 
-*After* the testing, the suite returns the Magento instance to the initial state disabling WYSIWYG:
+_After_ the testing, the suite returns the Magento instance to the initial state disabling WYSIWYG:
 
 1. Log back in.
 2. Disable **WYSIWYG** in the Magento instance.
@@ -195,11 +192,11 @@ This example declares a suite with the name `PaypalConfiguration`:
 
 ## Elements reference
 
-### suites {#suites-tag}
+### suites
 
 The root element for suites.
 
-### suite {#suite-tag}
+### suite
 
 A set of "before" and "after" preconditions, and test filters to include and exclude tests in the scope of suite.
 
@@ -210,24 +207,24 @@ Attributes|Type|Use|Description
 
 It can contain `<before>`, `<after>`, `<include>`, and `<exclude>`.
 
-### before {#before-tag}
+### before
 
 A suite hook with preconditions that executes once before the suite tests.
 
 It may contain test steps with any [actions] and [action groups].
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 Tests in the suite are not run and screenshots are not saved in case of a failure in the before hook.
 To troubleshoot the failure, run the suite locally.
-</div>
 
-### after {#after-tag}
+### after
 
 A suite hook with postconditions executed once after the suite tests.
 
 It may contain test steps with any [actions] and [action groups].
 
-### include {#include-tag}
+### include
 
 A set of filters that you can use to specify which tests to include in the test suite.
 
@@ -239,7 +236,7 @@ It may contain filters by:
 
 The element can contain [`<test>`], [`<group>`], and [`<module>`].
 
-### exclude {#exclude-tag}
+### exclude
 
 A set of filters that you can use to specify which tests to exclude in the test suite.
 
@@ -259,21 +256,21 @@ It may contain filters by:
 
 The element may contain [`<test>`], [`<group>`], and [`<module>`].
 
-### test {#test-tag}
+### test
 
 Attributes|Type|Use|Description
 ---|---|---|---
 `name`|string|required|Filtering a test by its name.
 `remove`|boolean|optional|Removing the filter during merging.
 
-### group {#group-tag}
+### group
 
 Attributes|Type|Use|Description
 ---|---|---|---
 `name`|string|required|Filtering tests by the `<group>` annotation.
 `remove`|boolean|optional|Removing the filter during merging.
 
-### module {#module-tag}
+### module
 
 Attributes|Type|Use|Description
 ---|---|---|---

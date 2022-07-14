@@ -1,8 +1,8 @@
 # Update the Magento Functional Testing Framework
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
+
 Both Magento `2.2` and `2.3` supports MFTF `2.5.3` ([Find your version][] of the MFTF).
-</div>
 
 Tests and the Framework itself are stored in different repositories.
 
@@ -31,7 +31,7 @@ Takes place when **second** digit of version number changes.
 ## After updating
 
 1. It is a good idea to regenerate your IDE Schema Definition catalog with `vendor/bin/mftf generate:urn-catalog .idea/`
-1. Update your tests, including data, metadata and other resoruces. Check if they contain tags that are unsupported in the newer version.
+1. Update your tests, including data, metadata and other resources. Check if they contain tags that are unsupported in the newer version.
 1. Remove the references to resources (ActionGroups, Sections, Tests) marked as deprecated.
 
 <!-- Link Definitions -->

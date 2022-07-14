@@ -52,8 +52,6 @@ Example with `after`:
 
 ## Examples
 
-<!-- {% raw %} -->
-
 The following example contains four actions:
 
 1. [Open the Sign In page for a Customer](#example-step1).
@@ -68,7 +66,7 @@ The following example contains four actions:
     <click selector="{{StorefrontCustomerSignInFormSection.signInAccountButton}}" stepKey="clickSignInAccountButton"/>
     ```
 
-### 1. Open the Sign In page for a customer {#example-step1}
+### 1. Open the Sign In page for a customer
 
 ```xml
 <amOnPage url="{{StorefrontCustomerSignInPage.url}}" stepKey="amOnSignInPage"/>
@@ -92,7 +90,7 @@ Source code (`StorefrontCustomerSignInPage.xml` ):
 This action uses the `url` attribute value for the given relative URI to open a browser page.
 Here, `url` contains a pointer to a `url` attribute of the `StorefrontCustomerSignInPage`.
 
-### 2. Enter a customer's email  {#example-step2}
+### 2. Enter a customer's email
 
 ```xml
 <fillField userInput="$$customer.email$$" selector="{{StorefrontCustomerSignInFormSection.emailField}}" stepKey="fillEmail"/>
@@ -119,7 +117,7 @@ This section is declared in `.../Customer/Section/StorefrontCustomerSignInFormSe
 </config>
 ```
 
-### 3. Enter a customer's password  {#example-step3}
+### 3. Enter a customer's password
 
 ```xml
 <fillField  userInput="$$customer.password$$" selector="{{StorefrontCustomerSignInFormSection.passwordField}}" stepKey="fillPassword"/>
@@ -128,13 +126,11 @@ This section is declared in `.../Customer/Section/StorefrontCustomerSignInFormSe
 This `<action>` is very similar to the `<action>` in a previous step.
 The only difference is that different data is assigned to the attributes, which set a field with a password.
 
-### 4. Click the Sign In button {#example-step4}
+### 4. Click the Sign In button
 
 ```xml
 <click selector="{{StorefrontCustomerSignInFormSection.signInAccountButton}}" stepKey="clickSignInAccountButton"/>
 ```
-
-<!-- {% endraw %} -->
 
 Here, [`<click>`](#click) performs a click on a button that can be found by the selector that is stored in the `signInAccountButton` of the `StorefrontCustomerSignInFormSection`.
 
@@ -1270,6 +1266,7 @@ Attribute|Type|Use|Description
 `after`|string|optional| `stepKey` of preceding action.
 
 #### Example
+
 ```xml
 <magentoCron stepKey="runStagingCronJobs" groups="staging"/>
 <!-- No interval here -->
@@ -1298,8 +1295,9 @@ Note that the makeScreenshot action does not automatically add the screenshot to
 <makeScreenshot userInput="example" stepKey="screenshotPage"/>
 ```
 
-<div class="bs-callout bs-callout-info">
-This action does not add a screenshot to the Allure [report](../reporting.md).</div>
+<InlineAlert variant="info" slots="text"/>
+
+This action does not add a screenshot to the Allure [report](../reporting.md).
 
 ### maximizeWindow
 
@@ -2361,9 +2359,10 @@ Attribute|Type|Use|Description
 
 Wait for all Magento loading overlays to disappear.
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 The CSS class for loading masks is not used consistently throughout Magento.
-Therefore, this convenience function tries to wait for various specific selectors.</div>
+Therefore, this convenience function tries to wait for various specific selectors.
 
 ```config
 # Wait for these classes to not be visible

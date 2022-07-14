@@ -52,8 +52,6 @@ Learn more about running tests with different options using [`mftf`] or [`codece
 
 Skip the `AdminLoginTest` test in the `.../Backend/Test/AdminLoginTest.xml` file while merging with the `.../Foo/Test/AdminLoginTest.xml` file:
 
-<!-- {% raw %} -->
-
 ```xml
 <tests ...>
     <test name="AdminLoginTest">
@@ -240,7 +238,7 @@ The `LogInAsAdminTest` result corresponds to:
 </test>
 ```
 
-### Add several test steps {#insert-after}
+### Add several test steps
 
 **Use case**: Add several actions after the `click` (`stepKey="clickLogin"`) in the `LogInAsAdminTest` test (in the `.../Backend/Test/LogInAsAdminTest.xml` file) while merging with the `.../Foo/Test/LogInAsAdminTest.xml` file:
 
@@ -567,8 +565,6 @@ The `_defaultSample` results corresponds to:
 </entity>
 ```
 
-<!-- {% endraw %} -->
-
 <!-- Link definitions -->
 
 [`codecept`]: ./commands/codeception.md
@@ -578,5 +574,5 @@ The `_defaultSample` results corresponds to:
 [`<pages>`]: ./page.md
 [`<sections>`]: ./section.md
 [`<tests>`]: ./test.md
-[`<action groups>`]: ./test/action-groups.md
+[`<action groups>`]: test/action-groups.md
 [mftfExtendingPrecedence image]: img/mftf-extending-precedence.png

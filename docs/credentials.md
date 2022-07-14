@@ -62,9 +62,9 @@ Or add new key/value pairs for your own credentials. The keys use the following 
 <vendor>/<key_name>=<key_value>
 ```
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
+
 The `/` symbol is not supported in a `key_name` other than the one after your vendor or extension name.
-</div>
 
 Otherwise you are free to use any other `key_name` you like, as they are merely the keys to reference from your tests.
 
@@ -139,6 +139,7 @@ CREDENTIAL_VAULT_SECRET_BASE_PATH=secret
 ## Configure AWS Secrets Manager
 
 AWS Secrets Manager offers secret management that supports:
+
 - Secret rotation with built-in integration for Amazon RDS, Amazon Redshift, and Amazon DocumentDB
 - Fine-grained policies and permissions
 - Audit secret rotation centrally for resources in the AWS Cloud, third-party services, and on-premises
@@ -159,7 +160,7 @@ AWS Secrets Manager offers secret management that supports:
 
 #### Secrets format
 
-`Secret Name` and `Secret Value` are two key pieces of information for creating a secret. 
+`Secret Name` and `Secret Value` are two key pieces of information for creating a secret.
 
 `Secret Value` can be either plaintext or key/value pairs in JSON format.  
 
@@ -187,7 +188,7 @@ aws secretsmanager create-secret --name "mftf/magento/shipping/carriers_usps_use
 - Choose Store a new secret
 - In the Select secret type section, specify "Other type of secret"
 - For `Secret Name`, `Secret Key` and `Secret Value` field, for example, to save the same secret in key/value JSON format, you should use
- 
+
 ```conf
 # Secret Name
 mftf/magento/shipping/carriers_usps_userid
@@ -203,8 +204,8 @@ shipping/carriers_usps_userid
 
 To use AWS Secrets Manager, the AWS region to connect to is required. You can set it through environment variable [`CREDENTIAL_AWS_SECRETS_MANAGER_REGION`][] in `.env`.
 
-MFTF uses the recommended [Default Credential Provider Chain][credential chain] to establish connection to AWS Secrets Manager service. 
-You can setup credentials according to [Default Credential Provider Chain][credential chain] and there is no MFTF specific setup required. 
+MFTF uses the recommended [Default Credential Provider Chain][credential chain] to establish connection to AWS Secrets Manager service.
+You can setup credentials according to [Default Credential Provider Chain][credential chain] and there is no MFTF specific setup required.
 Optionally, however, you can explicitly set AWS profile through environment variable [`CREDENTIAL_AWS_SECRETS_MANAGER_PROFILE`][] in `.env`.
 
 ```conf
@@ -214,7 +215,7 @@ CREDENTIAL_AWS_SECRETS_MANAGER_PROFILE=default
 ```
 
 ### Optionally set CREDENTIAL_AWS_ACCOUNT_ID environment variable
- 
+
 In case AWS credentials cannot resolve to a valid AWS account, full AWS KMS ([Key Management Service][]) key ARN ([Amazon Resource Name][]) is required.
 You will also need to set `CREDENTIAL_AWS_ACCOUNT_ID` environment variable so that MFTF can construct the full ARN. This is mostly used for CI/CD.
 
@@ -227,10 +228,9 @@ export CREDENTIAL_AWS_ACCOUNT_ID=<Your_12_Digits_AWS_Account_ID>
 It is possible and sometimes useful to setup and use multiple credential storage at the same time.
 In this case, the MFTF tests are able to read secret data at runtime from all storage options, in this case MFTF use the following precedence:
 
-```
+```text
 .credentials File > HashiCorp Vault > AWS Secrets Manager
 ```
-<!-- {% raw %} -->
 
 ## Use credentials in a test
 
@@ -248,8 +248,6 @@ For example, to reference secret data in the [`fillField`][] action, use the `us
 <fillField stepKey="FillApiToken" selector=".api-token" userInput="{{_CREDS.vendor/my_data_key}}" />
 ```
 
-<!-- {% endraw %} -->
-
 ## Implementation details
 
 The generated tests do not contain credentials values.
@@ -257,9 +255,9 @@ The MFTF dynamically retrieves, encrypts, and decrypts the sensitive data during
 Decrypted credentials do not appear in the console, error logs, or [test reports][].
 The decrypted values are only available in the `.credentials` file or within vault.
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 The MFTF tests delivered with Magento application do not use credentials and do not cover external services, because of sensitivity of the data.
-</div>
 
 <!-- Link definitions -->
 [`fillField`]: test/actions.md#fillfield

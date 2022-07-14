@@ -4,8 +4,6 @@ A `<section>` is a reusable part of a [`<page>`](./page.html) and is the standar
 
 A `<section>` can define:
 
-<!-- {% raw %} -->
-
 -  An explicit element that has a selector equal to the constant string. Example: `selector="#add_root_category_button"`
 -  A parameterized element that contains substitutable values in the selector. Example: `selector="#element .{{var1}} .{{var2}}"`.
 
@@ -16,8 +14,8 @@ Substitutable values in the test can be of the following formats:
 -  String literals (`stringLiteral`)
 -  References to a [data entity][] (XML data from the corresponding `.../Data/*.xml`) such as `entityName.Field`.
 -  Persisted data:
-  -  `$persistedCreateDataKey.field$` for data created in the scope of a [test][] using the [`<createData>`][] action with `stepKey="persistedCreateDataKey"`.
-  -  `$$persistedCreateDataKey.field$$` for data created in [before][] and [after][] hooks. Even though `<before>`and `<after>` are nested inside a [test][], persisted data is stored differently when it is done in a test hook. Therefore it must be accessed with a different notation.
+   -  `$persistedCreateDataKey.field$` for data created in the scope of a [test][] using the [`<createData>`][] action with `stepKey="persistedCreateDataKey"`.
+   -  `$$persistedCreateDataKey.field$$` for data created in [before][] and [after][] hooks. Even though `<before>`and `<after>` are nested inside a [test][], persisted data is stored differently when it is done in a test hook. Therefore it must be accessed with a different notation.
 
 The following diagram shows the XML structure of an MFTF section:
 
@@ -82,7 +80,7 @@ The following is an example of a call in test:
 
 ## Elements reference
 
-### section {#section-tag}
+### section
 
 `<section>` contains the sequence of UI elements in a section of a [page][].
 
@@ -92,7 +90,7 @@ Attributes|Type|Use|Description
 `deprecated`|string|optional|Used to warn about the future deprecation of the section. String will appear in Allure reports and console output at runtime.
 `remove`|boolean|optional|The default is `false`. Set to `true` to remove this element during parsing.
 
-### element {#element-tag}
+### element
 
 `<element>`is a UI element used in an [action][].
 
@@ -107,7 +105,7 @@ Attributes|Type|Use|Description
 `deprecated`|string|optional|Used to warn about the future deprecation of the element. String will appear in Allure reports and console output at runtime.
 `remove`|boolean|optional|The default is `false`. Set to `true` to remove this element during parsing.
 
-#### `timeout` attribute {#timeout-attribute}
+#### `timeout` attribute
 
 The attribute adds the [waitForPageLoad] action after a reference to the element in test.
 The most usual use case is a test step with a button click action.
@@ -133,8 +131,6 @@ The test step that covers the use case:
 <click selector="{{StorefrontSigninSection.signIn}}" ../>
 ...
 ```
-
-<!-- {% endraw %} -->
 
 Whenever the `signIn` button is used in a test, the MFTF will add a 30 second `waitForPageLoad` action immediately after the `click`.
 

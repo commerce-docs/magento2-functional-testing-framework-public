@@ -1,12 +1,12 @@
 # Introduction to the Magento Functional Testing Framework
 
-The Magento Functional Tesitng Framework (MFTF) is a framework used to perform automated end-to-end functional testing.
+The Magento Functional Testing Framework (MFTF) is a framework used to perform automated end-to-end functional testing.
 
 ## Goals
 
 -  To facilitate functional testing and minimize the effort it takes to perform regression testing.
 -  Enable extension developers to provide the Functional Tests to offered extensions.
--  Ensuring a common standard of quality between Magento, Extension Developers and System Intergrators.
+-  Ensuring a common standard of quality between Magento, Extension Developers and System Integrators.
 
 MFTF also focuses on
 
@@ -19,7 +19,7 @@ MFTF also focuses on
 ## Audience
 
 -  **Contributors**: Tests build confidence about the results of changes introduced to the platform.
--  **Extension Developers**: Can adjust expected behaviour according to their customizations.
+-  **Extension Developers**: Can adjust expected behavior according to their customizations.
 -  **System Integrators**: MFTF coverage provided out-of-the-box with Magento is solid base for Acceptance / Regression Tests.
 
 ## MFTF tests
@@ -52,17 +52,15 @@ Test
         └── ...
 ```
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
 
 We are actively developing functional tests. Check out the [MFTF Test Migration][] repository.
 
-</div>
-
 ## Use cases
 
--  Contributor: changes the core behaviour, fixing the annoing bug.
+-  Contributor: changes the core behavior, fixing the annoying bug.
    He wants to have automated "supervisor" which is going to verify his work continuously across the stages of bug fixing. Finally, when fix is done - Functional Test is also proof of work done.
--  Extension Developer: offers extension that changes core behaviour.
+-  Extension Developer: offers extension that changes core behavior.
    He can easily write new tests to make sure that after enabling the feature, Magento behaves properly. Everything with just extending existing tests. As a result he don't need to write coverage from scratch.
 -  Integration Agency: maintains Client's e-commerce.
    They are able to customize tests delivered with Magento core to follow customizations implemented to Magento. After each upgrade they can just run the MFTF tests to know that no regression was introduced.

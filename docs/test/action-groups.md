@@ -13,7 +13,7 @@ The following diagram shows the structure of an MFTF action group:
 The following conventions apply to MFTF action groups:
 
 - All action groups are declared in XML files and stored in the `<module>/Test/Mftf/ActionGroup/` directory.
-- Every file name ends with `ActionGroup` suffix. For exampe `LoginAsAdminActionGroup.xml`.
+- Every file name ends with `ActionGroup` suffix. For example `LoginAsAdminActionGroup.xml`.
 - Action group name should be the same as file name without extension.
 - Single file should contain only one `<actionGroup>` node
 
@@ -205,7 +205,9 @@ Starting with an action group such as:
 ```
 
 It can be reworked into more manageable pieces, as below. These smaller steps are easier to read, update, and reuse.
-* GoToCategoryGridAndAddNewCategory
+
+- GoToCategoryGridAndAddNewCategory
+
     ```xml
     <actionGroup name="GoToCategoryGridAndAddNewCategory">
         <seeInCurrentUrl url="{{AdminCategoryPage.url}}" stepKey="seeOnCategoryPage"/>
@@ -213,7 +215,9 @@ It can be reworked into more manageable pieces, as below. These smaller steps ar
         <see selector="{{AdminHeaderSection.pageTitle}}" userInput="New Category" stepKey="seeCategoryPageTitle"/>
     </actionGroup>
     ```
-* FillInBasicCategoryFields
+
+- FillInBasicCategoryFields
+
     ```xml
     <actionGroup name="FillInBasicCategoryFields">
         <arguments>
@@ -224,7 +228,9 @@ It can be reworked into more manageable pieces, as below. These smaller steps ar
         <fillField selector="{{AdminCategorySEOSection.UrlKeyInput}}" userInput="{{categoryEntity.name_lwr}}" stepKey="enterURLKey"/>
     </actionGroup>
     ```
-* SaveAndVerifyCategoryCreation
+
+- SaveAndVerifyCategoryCreation
+
     ```xml
     <actionGroup name="SaveAndVerifyCategoryCreation">
         <click selector="{{AdminCategoryMainActionsSection.SaveButton}}" stepKey="saveCategory"/>
@@ -234,11 +240,9 @@ It can be reworked into more manageable pieces, as below. These smaller steps ar
     </actionGroup>
     ```
 
-<!-- {% endraw %} -->
-
 ## Elements reference
 
-### actionGroups {#actiongroups-tag}
+### actionGroups
 
 The `<actionGroups>` element is a root element that contains XML configuration attributes.
 
@@ -249,7 +253,7 @@ Attribute|Value|Description
 
 It may contain one or more `<actionGroup>`.
 
-### actionGroup {#actiongroup-tag}
+### actionGroup
 
 Attribute|Type|Use|Description
 ---|---|---|---
@@ -259,11 +263,11 @@ Attribute|Type|Use|Description
 
 It may contain `<arguments>`.
 
-### arguments {#arguments-tag}
+### arguments
 
 The `<arguments>` element is a wrapper for an array of `<argument>` elements.
 
-### argument {#argument-tag}
+### argument
 
 Attribute|Type|Use|Description
 ---|---|---|---

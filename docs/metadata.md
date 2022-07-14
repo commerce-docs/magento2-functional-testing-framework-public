@@ -1,7 +1,7 @@
 # Metadata
 
 In this topic we talk about handling entities that you need in your tests (such as categories, products, wish lists, and similar) using the MFTF.
-Using data handling actions like [`createData`], [`deleteData`], [`updateData`], and [`getData`], you are able to create, delete, update, and read entities for your tests.
+Using data handling actions like [`createData`][createData], [`createData`][createData], [`updateData`][updateData], and [`getData`][getData], you are able to create, delete, update, and read entities for your tests.
 The framework enables you to send HTTP requests with these statically defined data entities:
 
 -  [Sending a REST API request][rest request]
@@ -39,7 +39,7 @@ When a test step requires handling the specified data entity, the MFTF performs 
 The following diagram demonstrates the XML structure of a metadata file:
 ![Structure of metadata](img/metadata-dia.svg)
 
-## Format {#format}
+## Format
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -64,7 +64,7 @@ The following diagram demonstrates the XML structure of a metadata file:
 </operations>
 ```
 
-## Principles {#principles}
+## Principles
 
 1. A `dataType` value must match the `type` value of the corresponding entity.
 2. A file name should be PascalCase and end with `Meta.xml`.
@@ -90,7 +90,7 @@ Example:
   </operations>
   ```
 
-## Handling entities using REST API {#handling-with-api}
+## Handling entities using REST API
 
 ### Sending a REST API request
 
@@ -115,7 +115,7 @@ The above screenshot from the [Magento REST API Reference][api reference] demons
 
 We assume that our `.env` file sets `MAGENTO_BASE_URL=https://example.com/` and `MAGENTO_BACKEND_NAME=admin`.
 
-#### Create a simple category {#create-object-as-adminOauth}
+#### Create a simple category
 
 Let's see what happens when you create a category:
 
@@ -182,10 +182,10 @@ The following is encoded in `<operation>`:
 The parameter that declares a body of the request is _catalogCategoryRepositoryV1SavePostBody_.
 Using the [Reference], we can trace how the JSON request was converted into XML representation.
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 Comments in the example below are used to demonstrate relation between JSON request and MFTF metadata in XML.
 JSON does not support comments.
-</div>
 
 Model schema for _catalogCategoryRepositoryV1SavePostBody_ with XML representation of _Catalog/Metadata/CategoryMeta.xml_ in comments:
 
@@ -228,7 +228,7 @@ So, the body of a REST API request that creates a simple category is the followi
 }
 ```
 
-#### Create an object as a guest {#create-object-as-anonymous}
+#### Create an object as a guest
 
 The corresponding test step is:
 
@@ -257,7 +257,7 @@ _Catalog/Data/CategoryData.xml_:
 
 As a result, the MFTF sends an unauthorized POST request with an empty body to the `https://example.com/rest/V1/guest-carts` and stores the single string response that the endpoint returns.
 
-### Handling a REST API response {#rest-response}
+### Handling a REST API response
 
 There are cases when you need to reuse the data that Magento responded with to your POST request.
 
@@ -269,7 +269,7 @@ Let's see how to handle data after you created a category with custom attributes
 
 The MFTF receives the corresponding JSON response and enables you to reference its data using a variable of format:
 
-**$** _stepKey_ **.** _JsonKey_ **$**
+__$** _stepKey_ **.** _JsonKey_ **$__
 
 Example:
 
@@ -279,7 +279,7 @@ $createPreReqCategory.id$
 
 And for a custom attribute:
 
-**$** _stepKey_  **.custom_attributes[** _attribute key_ **]$**
+__$** _stepKey_  **.custom_attributes[** _attribute key_ **]$__
 
 Example:
 
@@ -326,10 +326,9 @@ The following example of response in JSON demonstrates how to reference data on 
         }
     ],
 }
-}
 ```
 
-## Handling entities using HTML forms {#using-html-forms}
+## Handling entities using HTML forms
 
 For cases when REST API is not applicable, you may use [HTML forms] (when all object parameters are encoded in a URL as `key=name` attributes).
 There are two different attributes to split access to different areas:
@@ -339,7 +338,7 @@ There are two different attributes to split access to different areas:
 
 You are able to create assurances with `successRegex`, and, optionally, return values with `returnRegex`. You can also use `returnIndex` when `returnRegex` matches multiple values.
 
-### Create an object in Admin {#create-object-as-adminFormKey}
+### Create an object in Admin
 
 The `CreateStoreGroup` operation is used to persist a store group:
 
@@ -375,7 +374,7 @@ The operation enables you to assign the following form fields:
 -  `store_action`
 -  `store_type`
 
-### Create an object in storefront {#create-object-as-customerFormKey}
+### Create an object in storefront
 
 The MFTF uses the `CreateWishlist` operation to create a wish list on storefront:
 
@@ -403,11 +402,11 @@ The operation assigns three form fields:
 
 ## Reference
 
-### operations {#operations-tag}
+### operations
 
 Root element that points to the corresponding XML Schema.
 
-### operation {#operation-tag}
+### operation
 
 | Attribute       | Type                                                                         | Use      | Description                                                                                                                                  |
 |-----------------|------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -430,20 +429,19 @@ Root element that points to the corresponding XML Schema.
   Example: `"/V1/products/{product.sku}/media/{id}"`.
 
 -  \*\*`auth` - available values:
+   -  `adminOath` is used for REST API persistence in the Admin area with [OAuth-based authentication][oauth].
+   -  `adminFormKey` is used for HTML form persistence in the Admin area.
+   -  `customerFormKey` is used for HTML form persistence in the Customer area.
+   -  `anonymous` is used for REST API persistence without authorization.
 
-  -  `adminOath` is used for REST API persistence in the Admin area with [OAuth-based authentication][oauth].
-  -  `adminFormKey` is used for HTML form persistence in the Admin area.
-  -  `customerFormKey` is used for HTML form persistence in the Customer area.
-  -  `anonymous` is used for REST API persistence without authorization.
-
-### contentType {#contentType-tag}
+### contentType
 
 Sets one of the following operation types:
 
 -  `application/json` is used for REST API operations.
 -  `application/x-www-form-urlencoded` is used for HTML form operations.
 
-### object {#object-tag}
+### object
 
 Representation of a complex entity that may contain fields, arrays, and objects.
 An object must match the [entity] of the same `type`.
@@ -454,7 +452,7 @@ An object must match the [entity] of the same `type`.
 | `dataType` | string  | required | Type of the related [entity].                                                                  |
 | `required` | boolean | optional | Determines if the object is required or not. It must match the Magento REST API specification. |
 
-### field {#field-tag}
+### field
 
 Representation of HTML form or REST API fields.
 
@@ -464,7 +462,7 @@ Representation of HTML form or REST API fields.
 | `type`     | string  | optional | Type of the value. It may contain a primitive type or the type of another operation.          |
 | `required` | boolean | optional | Determines if the field is required or not. It must match the Magento REST API specification. |
 
-### array {#array-tag}
+### array
 
 Representation of an array.
 
@@ -474,7 +472,7 @@ Representation of an array.
 
 It contains one or more `value` elements.
 
-### value {#value-tag}
+### value
 
 Declares a data type for items within `<array>`.
 
@@ -529,7 +527,7 @@ The value declares the `product_options` array that contains one or more entitie
 
 The value declares the `tax_rate_ids` array that contains one or more `id` fields of the `tax_rate` data type entity.
 
-### header {#header-tag}
+### header
 
 An additional parameter in REST API request.
 
@@ -541,7 +539,7 @@ An additional parameter in REST API request.
 <header param="status">available</header>
 ```
 
-### param {#param-tag}
+### param
 
 An additional parameter in URL.
 

@@ -23,8 +23,8 @@ MFTF reports about its progress during test run when you run the `mftf` CLI tool
 The report can contain three main parts:
 
 -  Pre-run checks:
-  -  Environment check, such as PHP warnings, etc.
-  -  XML test validation like deprecation warnings such as missing required components in XML tests.
+   -  Environment check, such as PHP warnings, etc.
+   -  XML test validation like deprecation warnings such as missing required components in XML tests.
 -  Codeception report which is the progress report for each test.
 -  Total results of the test run such as number of tests, assertions, and failures.
 
@@ -220,7 +220,7 @@ Store Name
 Store Phone Number
 Store Hours of Operation
 Countr
-[Content too long to display. See complete response in '/Users/dmytroshevtsov/Projects/vagrant/vagrant-magento/magento2ce/dev/tests/acceptance/tests/_output/' directory]
+[Content too long to display. See complete response in '~/Projects/vagrant/vagrant-magento/magento2ce/dev/tests/acceptance/tests/_output/' directory]
 --> contains "#something".
 
 Scenario Steps:
@@ -270,9 +270,9 @@ Each time you run tests, MFTF appends an XML file with results at the `tests/_ou
 
 The official [Allure Test Report][] documentation is well-covered, so we'll list only the CLI commands that you would need for your day-to-day work.
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 The following commands are relative to the Magento installation directory.
-</div>
 
 To generate the HTML Allure report in a temporary folder and open the report in your default web browser:
 
@@ -298,10 +298,10 @@ To launch the generated report in a web browser:
 allure open dev/tests/acceptance/tests/_output/allure-report
 ```
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
+
 By default, Allure generates reports in the `allure-report/` at the current directory.
 For example, if you run the command without `-o` flag while you are in the `magento2/` directory, Allure will generate a report at the `magento2/allure-report/` directory.
-</div>
 
 ```bash
 allure generate dev/tests/acceptance/tests/_output/allure-result
@@ -325,7 +325,6 @@ allure open
 ```
 
 Allure would attempt to open a generated report at the `magento2/allure-report/` directory.'
-%}
 
 To clean up existing reports before generation (for example after getting new results), use the `--clean` flag:
 

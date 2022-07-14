@@ -11,15 +11,13 @@ You can create or update any component of the parent body in your new test/actio
 
 Specify needed variations for a parent object and produce a copy of the original that incorporates the specified changes (the "delta").
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 Unlike merging, the parent test (or action group) will still exist after the test generation.
-</div>
 
 ## Extending tests
 
 ### Update a test step
-
-<!-- {% raw %} -->
 
 __Use case__: Create two similar tests with different `url` (`"{{AdminCategoryPage.url}}"` and `"{{OtherCategoryPage.url}}"`) in a test step.
 
@@ -282,8 +280,6 @@ Add a new test `VerifyProductCount` that asserts the count of products:
 </actionGroups>
 ```
 
-<!-- {% endraw %} -->
-
 ## Extending data
 
 Extend data to reuse entities in your module.
@@ -365,5 +361,5 @@ __Use case__: Create an entity named `DivPanelGreen`, which is similar to the `D
 <!-- Link definitions -->
 [test]: ./test.md
 [data]: ./data.md
-[action group]: ./test/action-groups.md
+[action group]: test/action-groups.md
 [actions]: ./test/actions.md

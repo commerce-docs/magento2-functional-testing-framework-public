@@ -11,8 +11,6 @@ Avoid hard-coded location selectors from tests to increase the maintainability a
 
 Two types of pages are available:
 
-<!-- {% raw %} -->
-
 -  Page with `url` declared as a constant string or [explicit page] - In a test it is called in a format like `{{NameOfPage.url}}`, where `NameOfPage` is a value of `name` in the corresponding page declaration `*.xml` file.
 -  Page with `url` declared as a string with one or more variables or [parameterized page]
 -  In a test it is called using a format like `{{NameOfPage.url(var1, var2, ...)}}`, where `var1, var2` etc. are parameters that will be substituted in the `url` of the corresponding `<page>` declaration.
@@ -128,12 +126,12 @@ The `StorefrontCategoryPage` page declares only the `StorefrontCategoryMainSecti
 
 There are several XML elements that are used in `<page>` in the MFTF.
 
-### pages {#pages-tag}
+### pages
 
 `<pages>` are elements that point to the corresponding XML Schema location.
 It contains one or more `<page>` elements.
 
-### page {#page-tag}
+### page
 
 `<page>` contains a sequence of UI sections in a page.
 
@@ -149,9 +147,7 @@ Attributes|Type|Use|Description
 
 `<page>` may contain several [`<section>`] elements.
 
-<!-- {% endraw %} -->
-
-### section {#section-tag}
+### section
 
 `<section>` contains the sequence of UI elements.
 A section is a reusable piece or part of a page.

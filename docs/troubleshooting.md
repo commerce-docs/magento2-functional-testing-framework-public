@@ -26,13 +26,14 @@ In versions of the MFTF lower than 2.5.0 you should:
    ```terminal
    <magento root directory>/dev/tests/acceptance/tests/functional.suite.yml
    ```
+
 1. Add quotation marks (`"`) around these values:
 
     1. `%SELENIUM_HOST%`
     1. `%SELENIUM_PORT%`
     1. `%SELENIUM_PROTOCOL%`
     1. `%SELENIUM_PATH%`
-    
+
 1. Run the `vendor/bin/mftf build:project` command again.
 1. You should see the AcceptanceTester class is created at:
 

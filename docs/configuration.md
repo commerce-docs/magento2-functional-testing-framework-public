@@ -18,9 +18,9 @@ Example:
 MAGENTO_BASE_URL=http://magento2.vagrant251
 ```
 
-<div class="bs-callout bs-callout-info" markdown="1">
+<InlineAlert variant="info" slots="text"/>
+
 If the `MAGENTO_BASE_URL` contains a subdirectory (like `http://magento.test/magento2ce`), specify [`MAGENTO_CLI_COMMAND_PATH`][].
-</div>
 
 ### MAGENTO_BACKEND_NAME
 
@@ -96,10 +96,10 @@ SELENIUM_PROTOCOL=http
 SELENIUM_PATH=/wd/hub
 ```
 
-<div class="bs-callout bs-callout-warning" markdown="1">
+<InlineAlert variant="warning" slots="text"/>
+
 `SELENIUM_*` values are required if you are running Selenium on an external system.
 If you change the configuration of the external Selenium server, you must update these values.
-</div>
 
 #### SELENIUM_HOST
 

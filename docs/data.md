@@ -5,8 +5,6 @@ The following diagram shows the XML structure of an MFTF data object:
 
 ![MFTF Data Object](img/data-dia.svg)
 
-<!-- {% raw %} -->
-
 ## Supply data to test by reference to a data entity
 
 Test steps requiring `<data>` input in an action, like filling a field with a string, may reference an attribute from a data entity:
@@ -47,7 +45,7 @@ In this example:
 
 Learn more in [Credentials][].
 
-## Persist a data entity as a prerequisite of a test {#persist-data}
+## Persist a data entity as a prerequisite of a test
 
 A test can specify an entity to be persisted (created in the database) so that the test actions could operate on the existing known data.
 
@@ -63,9 +61,9 @@ In this example:
 *  `email` is a data key of the entity.
   The corresponding value will be assigned to `userInput` as a result.
 
-<div class="bs-callout bs-callout-info">
+<InlineAlert variant="info" slots="text"/>
+
 As of MFTF 2.3.6, you no longer need to differentiate between scopes (a test, a hook, or a suite) for persisted data when referencing it in tests.
-</div>
 
 The MFTF now stores the persisted data and attempts to retrieve it using the combination of `stepKey` and the scope of where it has been called.
 The current scope is preferred, then widening to _test > hook > suite_ or _hook > test > suite_.
@@ -179,8 +177,6 @@ The following is an example of a call in test:
 <fillField selector="{{AdminCategoryBasicFieldSection.categoryNameInput}}" userInput="{{_defaultCategory.name}}" stepKey="enterCategoryName"/>
 ```
 
-<!-- {% endraw %} -->
-
 This action inputs data from the `name` of the `_defaultCategory` entity (for example, `simpleCategory598742365`) into the field with the locator defined in the selector of the `categoryNameInput` element of the `AdminCategoryBasicFieldSection`.
 
 You can also call data from the xml definition of a `data` tag directly:
@@ -195,11 +191,11 @@ You can also call data from the xml definition of a `data` tag directly:
 
 ## Reference
 
-### entities {#entities-tag}
+### entities
 
 `<entities>` is an element that contains all `<entity>`  elements.
 
-### entity {#entity-tag}
+### entity
 
 `<entity>` is an element that contains `<data>` elements.
 
@@ -211,7 +207,7 @@ Attributes|Type|Use|Description
 
 `<entity>` may contain one or more [`<data>`][], [`<var>`][], [`<required-entities>`][], or [`<array>`][] elements in any sequence.
 
-### data {#data-tag}
+### data
 
 `<data>` is an element containing a data/value pair.
 
@@ -220,7 +216,7 @@ Attributes|Type|Use|Description
 `key`|string|optional|Key attribute of data/value pair.
 `unique`|enum: `"prefix"`, `"suffix"`|optional|Add suite or test wide unique sequence as "prefix" or "suffix" to the data value if specified.
 
-### var {#var-tag}
+### var
 
 `<var>` is an element that can be used to grab a key value from another entity. For example, when creating a customer with the `<createData>` action, the server responds with the auto-incremented ID of that customer. Use `<var>` to access that ID and use it in another data entity.
 
@@ -229,9 +225,9 @@ Attributes|Type|Use|Description
 `key`|string|optional|Key attribute of this entity to assign a value to.
 `entityType`|string|optional|Type attribute of referenced entity.
 `entityKey`|string|optional|Key attribute of the referenced entity from which to get a value.
-`unique`|--|--|*This attribute hasn't been implemented yet.*
+`unique`|--|--|_This attribute hasn't been implemented yet._
 
-### requiredEntity {#requiredentity-tag}
+### requiredEntity
 
 `<requiredEntity>` is an element that specifies the parent/child relationship between complex types.
 
@@ -249,7 +245,7 @@ Attributes|Type|Use|Description
 ---|---|---|---
 `type`|string|optional|Type attribute of `<requiredEntity>`.
 
-### array {#array-tag}
+### array
 
 `<array>` is an element that contains a reference to an array of values.
 
@@ -272,7 +268,7 @@ Attributes|Type|Use|Description
 
 `<array>` may contain [`<item>`][] elements.
 
-### item {#item-tag}
+### item
 
 `<item>` is an individual piece of data to be passed in as part of the parent `<array>` type.
 

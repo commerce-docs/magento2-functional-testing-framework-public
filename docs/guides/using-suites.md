@@ -77,17 +77,19 @@ This example declares a suite with name `WYSIWYGDisabledSuite`:
     ```bash
     vendor/bin/mftf generate:suite <suiteName> [<suiteName>]
     ```
+
 *  Run all tests within suite.
 
     ```bash
     vendor/bin/mftf run:group <suiteName> [<suiteName>]
     ```
+
 *  Generates any combination of suites and tests.
 
     ```bash
     vendor/bin/mftf generate:tests --tests '{"tests":["testName1","testName2"],"suites":{"suite1":["suite_test1"],"suite2":null}}'
     ```
- 
+
 ### Run specific tests within a suite
 
 If a test is referenced in a suite, it can be run in the suite's context with MFTF `run` command. If a test is referenced in multiple suites, the `run` command will run the test multiple times in all contexts.

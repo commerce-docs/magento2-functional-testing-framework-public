@@ -13,7 +13,7 @@ Test material merging is covered extensively in the [merging] topic, so it will 
 ### Modular test materials
 
 This refers to test materials being correctly owned by the right Magento module, and for tests to have references to only what their parent Magento module has a dependency on.
- 
+
 Since MFTF queries the Magento instance for enabled modules, MFTF test materials are included or excluded from the merging process dynamically, making proper ownership and dependencies a must.
 
 Consider the following scenario:
@@ -50,7 +50,7 @@ The following `<select>` for `Tax Class` clearly belongs to the `Tax` module:
 
 This approach will work on getting the quickest ownership, but it is fairly obvious that it may be necessary to double check.
 
-#### Deduction 
+#### Deduction
 
 This is the next step up in difficulty from the above method, as it involves searching through the Magento codebase.
 

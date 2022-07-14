@@ -7,12 +7,10 @@ Check out our best practices below to ensure you are getting the absolute most o
 ### Use existing Tests and resources
 
 Magento offers more than **3000** acceptance tests, **2500** [Action group]s, **750** Page declarations with more than **1500** Section definitions.
-It is very probable that behaviour you want to test already exists as a Test or Action Group.
+It is very probable that behavior you want to test already exists as a Test or Action Group.
 Instead of writing everything by yourself - use `extends` attribute to refer to existing element and customize it.
 
 **Reusable Resources**
-
-{%raw%}
 
 *  Tests (reusable with `<test extends="...">` argument)
 *  Action Group (reusable with including `<actionGroup ref="...">`, or extending `<actionGroup extends="...">`)
@@ -20,13 +18,9 @@ Instead of writing everything by yourself - use `extends` attribute to refer to 
 *  Sections (reusable with reference `{{SectionDefinition.elementDefinition}}`)
 *  Data Entities (reusable with reference `<createData entity="...">"` or extending `<entity extends="...">`)
 
-{%endraw%}
-
-<div class="bs-callout bs-callout-warning" markdown="1">
+<InlineAlert variant="warning" slots="text"/>
 
 Avoid using resources that are marked as **Deprecated**. Usually there is a replacement provided for a deprecated resource.
-
-</div>
 
 ### Extract repetitive Actions
 
@@ -37,7 +31,7 @@ We recommend to keep Action Groups having single responsibility, for example `Ad
 
 ## Contribute
 
-Althought the Magento Core team and Contributors join forces to cover most of the features with tests, it is impossible to have this done quickly.
+Although the Magento Core team and Contributors join forces to cover most of the features with tests, it is impossible to have this done quickly.
 If you've covered Magento Core feature with Functional Tests - you are more than welcome to contribute.
 
 You can also help with MFTF Test Migration to get the experience and valuable feedback from other community members and maintainers.
@@ -97,8 +91,6 @@ The following pattern is used when merging with `extends`:
 
 Name files according to the following patterns to make searching in future more easy:
 
-<!-- {% raw %} -->
-
 #### Test file name
 
 Format: {_Admin_ or _Storefront_}{Functionality}_Test.xml_, where Functionality briefly describes the testing functionality.
@@ -107,9 +99,9 @@ Example: _StorefrontCreateCustomerTest.xml_.
 
 #### Action Group file name
 
-Format: {_Admin_ or _Storefront_}{Action Group Summary}ActionGroup.xml`, where Action Group Summary describes with a few words what we can expect from it.
+Format: {_Admin_ or _Storefront_}{Action Group Summary}ActionGroup.xml, where Action Group Summary describes with a few words what we can expect from it.
 
-Example: _AdminCreateStoreActionGroup.xml_ 
+Example: _AdminCreateStoreActionGroup.xml_
 
 #### Section file name
 
@@ -120,8 +112,6 @@ Example: _AdminNavbarSection.xml_.
 #### Data file name
 
 Format: {Type}_Data.xml_, where Type represents the entity type.
-
-<!-- {% endraw %} -->
 
 Example: _ProductData.xml_.
 
@@ -153,21 +143,13 @@ Use a lower case first letter for:
 Use [parameterized selectors] for constructing a selector when test specific or runtime generated information is needed.
 Do not use them for static elements.
 
-<span class="color:red">
 BAD:
-</span>
-
-<!-- {% raw %} -->
 
 ``` xml
 <element name="relatedProductSectionText" type="text" selector=".fieldset-wrapper.admin__fieldset-section[data-index='{{productType}}']" parameterized="true"/>
 ```
 
-<!-- {% endraw %} -->
-
-<span class="color:green">
 GOOD:
-</span>
 
 Define these three elements and reference them by name in the tests.
 

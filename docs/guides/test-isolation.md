@@ -1,4 +1,5 @@
 ---
+title: Test isolation
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-isolation/
 layout: migrated
 ---

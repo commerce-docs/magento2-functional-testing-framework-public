@@ -1,4 +1,5 @@
 ---
+title: Merge tests
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-tests/
 layout: migrated
 ---

@@ -1,4 +1,5 @@
 ---
+title: Configuring MFTF for two-factor authentication (2FA)
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/
 layout: migrated
 ---

@@ -1,4 +1,5 @@
 ---
+title: Credentials
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/credentials/
 layout: migrated
 ---

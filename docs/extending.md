@@ -1,4 +1,5 @@
 ---
+title: Extending
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/extending/
 layout: migrated
 ---

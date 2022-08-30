@@ -1,4 +1,5 @@
 ---
+title: Action group best practices
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/action-group-best-practices/
 layout: migrated
 ---

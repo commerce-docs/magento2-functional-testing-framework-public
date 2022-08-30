@@ -1,4 +1,5 @@
 ---
+title: CLI commands - vendor/bin/codecept
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/commands/codeception/
 layout: migrated
 ---

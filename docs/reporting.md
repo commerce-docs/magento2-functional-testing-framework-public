@@ -1,4 +1,5 @@
 ---
+title: Reporting
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/reporting/
 layout: migrated
 ---

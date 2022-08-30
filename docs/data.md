@@ -1,4 +1,5 @@
 ---
+title: Input testing data
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/data/
 layout: migrated
 ---

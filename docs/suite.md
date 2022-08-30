@@ -1,4 +1,5 @@
 ---
+title: Suites
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/suite/
 layout: migrated
 ---

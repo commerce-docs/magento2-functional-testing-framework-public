@@ -1,4 +1,5 @@
 ---
+title: Merge data
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-data/
 layout: migrated
 ---

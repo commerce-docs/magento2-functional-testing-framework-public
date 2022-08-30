@@ -1,4 +1,5 @@
 ---
+title: Merge action groups
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-action-groups/
 layout: migrated
 ---

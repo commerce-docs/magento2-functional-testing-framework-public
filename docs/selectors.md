@@ -1,4 +1,5 @@
 ---
+title: Selectors
 migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/selectors/
 layout: migrated
 ---

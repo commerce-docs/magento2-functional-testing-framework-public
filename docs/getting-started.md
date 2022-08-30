@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/getting-started/
+layout: migrated
+---
+
 # Getting started
 
 <div class="bs-callout bs-callout-info" markdown="1">

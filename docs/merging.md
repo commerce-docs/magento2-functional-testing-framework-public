@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merging/
+layout: migrated
+---
+
 # Merging
 
 MFTF allows you to merge test components defined in XML files, such as:

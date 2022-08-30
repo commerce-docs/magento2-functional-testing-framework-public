@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-action-groups/
+layout: migrated
+---
+
 # Extend action groups
 
 Extending an action group doesn't affect the existing action group.

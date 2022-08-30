@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/extending/
+layout: migrated
+---
+
 # Extending
 
 There are cases when you need to create many tests that are very similar to each other.

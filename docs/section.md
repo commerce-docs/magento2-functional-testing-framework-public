@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/
+layout: migrated
+---
+
 # Section structure
 
 A `<section>` is a reusable part of a [`<page>`](./page.html) and is the standard file for defining UI elements on a page used in a test.

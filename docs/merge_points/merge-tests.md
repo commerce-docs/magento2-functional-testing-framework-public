@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-tests/
+layout: migrated
+---
+
 # Merge tests
 
 Tests can be merged to create a new test that covers new extension capabilities.

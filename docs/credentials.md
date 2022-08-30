@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/credentials/
+layout: migrated
+---
+
 # Credentials
 
 When you test functionality that involves external services such as UPS, FedEx, PayPal, or SignifyD,

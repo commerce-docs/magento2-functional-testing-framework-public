@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/suite/
+layout: migrated
+---
+
 # Suites
 
 Suites are essentially groups of tests that run in specific conditions (preconditions and postconditions).

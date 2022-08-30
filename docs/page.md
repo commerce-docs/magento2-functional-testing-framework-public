@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/page/
+layout: migrated
+---
+
 # Page structure
 
 MFTF uses a modified concept of [PageObjects], which models the testing areas of your page as objects within the code.

@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-pages/
+layout: migrated
+---
+
 # Merge pages
 
 Sections can be merged into pages to cover your extension.

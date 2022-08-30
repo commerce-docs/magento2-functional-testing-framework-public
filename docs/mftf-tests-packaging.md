@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/mftf-tests-packaging/
+layout: migrated
+---
+
 <style>
 .mftf-dl {
   margin-bottom: 2.5em;

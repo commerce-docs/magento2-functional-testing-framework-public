@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/debugging/
+layout: migrated
+---
+
 # Debugging
 
 Debugging within the Magento Functional Testing Framework is helpful in identifying test bugs by allowing you to pause execution so that you may:

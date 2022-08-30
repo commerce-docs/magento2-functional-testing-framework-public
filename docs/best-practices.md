@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices/
+layout: migrated
+---
+
 # Best practices
 
 Check out our best practices below to ensure you are getting the absolute most out of the Magento Functional Testing Framework.
@@ -85,7 +90,7 @@ The following pattern is used when merging with `extends`:
  Use a corresponding [`<deleteData>`] test step in your [`<after>`] block when using a [`<createData>`] action in a [`<before>`] block.
 2. Make specific data entries under test to be unique.
  Enable data uniqueness where data values are required to be unique in a database by test design.
- Use `unique=”suffix”` or `unique=”prefix”` to append or prepend a unique value to the [entity] attribute.
+ Use `unique="suffix"` or `unique="prefix"` to append or prepend a unique value to the [entity] attribute.
  This ensures that tests using the entity can be repeated.
 3. Do not modify existing data entity fields or merge additional data fields without complete understanding and verifying the usage of existing data in tests.
  Create a new data entity for your test if you are not sure.

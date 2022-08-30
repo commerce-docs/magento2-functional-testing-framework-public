@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/assertions/
+layout: migrated
+---
+
 # Assertions
 
 Assertions serve to pass or fail the [test](../test.md#test-tag) if a condition is not met. These assertions will look familiar to you if you've used any other testing framework, like PHPUnit.
@@ -287,8 +292,8 @@ Example:
 
 ```xml
 <assertGreaterOrEquals stepKey="checkStatusSortOrderAsc" after="getOrderStatusSecondRow">
-	<actualResult type="const">$getOrderStatusSecondRow</actualResult>
-	<expectedResult type="const">$getOrderStatusFirstRow</expectedResult>
+    <actualResult type="const">$getOrderStatusSecondRow</actualResult>
+    <expectedResult type="const">$getOrderStatusFirstRow</expectedResult>
 </assertGreaterOrEquals>
 ```
 
@@ -307,8 +312,8 @@ Example:
 
 ```xml
 <assertGreaterThan stepKey="checkQuantityWasChanged">
-	<actualResult type="const">$grabEndQuantity</actualResult>
-	<expectedResult type="const">$grabStartQuantity</expectedResult>
+    <actualResult type="const">$grabEndQuantity</actualResult>
+    <expectedResult type="const">$grabStartQuantity</expectedResult>
 </assertGreaterThan>
 ```
 
@@ -327,8 +332,8 @@ Example:
 
 ```xml
 <assertGreaterThanOrEqual stepKey="checkStatusSortOrderAsc" after="getOrderStatusSecondRow">
-	<actualResult type="const">$getOrderStatusSecondRow</actualResult>
-	<expectedResult type="const">$getOrderStatusFirstRow</expectedResult>
+    <actualResult type="const">$getOrderStatusSecondRow</actualResult>
+    <expectedResult type="const">$getOrderStatusFirstRow</expectedResult>
 </assertGreaterThanOrEqual>
 ```
 
@@ -489,7 +494,7 @@ Example:
 
 ```xml
 <assertNotEmpty stepKey="checkSwatchFieldForAdmin">
-	<actualResult type="const">$grabSwatchForAdmin</actualResult>
+    <actualResult type="const">$grabSwatchForAdmin</actualResult>
 </assertNotEmpty>
 ```
 
@@ -508,8 +513,8 @@ Example:
 
 ```xml
 <assertNotEquals stepKey="assertNotEquals">
-	<actualResult type="string">{$grabTotalAfter}</actualResult>
-	<expectedResult type="string">{$grabTotalBefore}</expectedResult>
+    <actualResult type="string">{$grabTotalAfter}</actualResult>
+    <expectedResult type="string">{$grabTotalBefore}</expectedResult>
 </assertNotEquals>
 ```
 
@@ -584,8 +589,8 @@ Example:
 
 ```xml
 <assertNotRegExp stepKey="simpleThumbnailIsNotDefault">
-	<actualResult type="const">$getSimpleProductThumbnail</actualResult>
-	<expectedResult type="const">'/placeholder\/thumbnail\.jpg/'</expectedResult>
+    <actualResult type="const">$getSimpleProductThumbnail</actualResult>
+    <expectedResult type="const">'/placeholder\/thumbnail\.jpg/'</expectedResult>
 </assertNotRegExp>
 ```
 

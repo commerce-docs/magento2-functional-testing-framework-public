@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-data/
+layout: migrated
+---
+
 # Merge data
 
 Data objects can be merged to cover the needs of your extension.

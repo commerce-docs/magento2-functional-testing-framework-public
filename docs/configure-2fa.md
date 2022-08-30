@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/
+layout: migrated
+---
+
 # Configuring MFTF for Two-Factor Authentication (2FA)
 
 Using two-factor authentication (2FA) with MFTF is possible with some configurations settings in Magento.

@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/
+layout: migrated
+---
+
 # Introduction to the Magento Functional Testing Framework
 
 <div class="bs-callout bs-callout-info" markdown="1">

@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/metadata/
+layout: migrated
+---
+
 # Metadata
 
 In this topic we talk about handling entities that you need in your tests (such as categories, products, wish lists, and similar) using MFTF.

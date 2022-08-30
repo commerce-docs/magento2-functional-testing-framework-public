@@ -1,3 +1,8 @@
+---
+migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/custom-helpers/
+layout: migrated
+---
+
 # Custom Helpers
 
 <div class="bs-callout-warning">
@@ -37,7 +42,7 @@ This functionality is used to select text on the page and cannot be accomplished
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

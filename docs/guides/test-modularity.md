@@ -1,6 +1,6 @@
 ---
 title: Test modularity
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-modularity/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-modularity/
 layout: migrated
 ---
 

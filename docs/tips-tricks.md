@@ -1,6 +1,6 @@
 ---
 title: Tips and tricks
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/tips-tricks/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/tips-tricks/
 layout: migrated
 ---
 

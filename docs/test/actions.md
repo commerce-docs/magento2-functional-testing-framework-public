@@ -1,6 +1,6 @@
 ---
 title: Test actions
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/actions/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/actions/
 layout: migrated
 ---
 

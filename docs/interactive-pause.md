@@ -1,6 +1,6 @@
 ---
 title: Interactive pause
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/interactive-pause/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/interactive-pause/
 layout: migrated
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Merging
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merging/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merging/
 layout: migrated
 ---
 

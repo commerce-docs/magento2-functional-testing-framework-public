@@ -1,6 +1,6 @@
 ---
 title: Preparing a test for MFTF
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-prep/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-prep/
 layout: migrated
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Best practices
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices/
 layout: migrated
 ---
 

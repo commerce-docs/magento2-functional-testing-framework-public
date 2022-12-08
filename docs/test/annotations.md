@@ -1,6 +1,6 @@
 ---
 title: Annotations
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/annotations/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/annotations/
 layout: migrated
 ---
 

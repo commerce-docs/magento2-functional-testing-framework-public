@@ -1,6 +1,6 @@
 ---
 title: Merge points for testing extensions in MFTF
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/
 layout: migrated
 ---
 

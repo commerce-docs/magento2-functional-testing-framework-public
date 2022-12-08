@@ -1,6 +1,6 @@
 ---
 title: Page structure
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/page/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/page/
 layout: migrated
 ---
 

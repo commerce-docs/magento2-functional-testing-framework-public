@@ -1,6 +1,6 @@
 ---
 title: Configuration
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/configuration/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/configuration/
 layout: migrated
 ---
 

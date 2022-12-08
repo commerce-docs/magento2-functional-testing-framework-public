@@ -1,6 +1,6 @@
 ---
 title: Section structure
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/
 layout: migrated
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: MFTF functional test modules and packaging
-migrated_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/mftf-tests-packaging/
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/mftf-tests-packaging/
 layout: migrated
 ---
 

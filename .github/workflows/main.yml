@@ -5,7 +5,8 @@ name: CI
 
 on:
   pull_request:
-    paths-ignore: docs/**
+    paths-ignore:
+      - 'docs/**'
 
 jobs:
   unit-tests:

@@ -1,7 +1,7 @@
 ---
 title: Credentials
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/credentials/
-layout: migrated
+status: migrated
 ---
 
 # Credentials

@@ -1,7 +1,7 @@
 ---
 title: How to use MFTF in CICD
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/cicd/
-layout: migrated
+status: migrated
 ---
 
 # How to use MFTF in CICD

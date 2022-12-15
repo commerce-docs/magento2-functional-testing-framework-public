@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/troubleshooting/
-layout: migrated
+status: migrated
 ---
 
 # Troubleshooting

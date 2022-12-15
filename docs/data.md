@@ -1,7 +1,7 @@
 ---
 title: Input testing data
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/data/
-layout: migrated
+status: migrated
 ---
 
 # Input testing data

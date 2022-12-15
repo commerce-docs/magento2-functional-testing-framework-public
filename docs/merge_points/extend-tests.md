@@ -1,7 +1,7 @@
 ---
 title: Extend tests
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-tests/
-layout: migrated
+status: migrated
 ---
 
 # Extend tests

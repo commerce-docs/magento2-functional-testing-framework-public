@@ -1,7 +1,7 @@
 ---
 title: Update the Magento Functional Testing Framework
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/update/
-layout: migrated
+status: migrated
 ---
 
 # Update the Magento Functional Testing Framework

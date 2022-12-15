@@ -1,7 +1,7 @@
 ---
 title: Metadata
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/metadata/
-layout: migrated
+status: migrated
 ---
 
 # Metadata

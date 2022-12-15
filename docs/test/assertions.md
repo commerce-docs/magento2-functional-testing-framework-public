@@ -1,7 +1,7 @@
 ---
 title: Assertions
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/assertions/
-layout: migrated
+status: migrated
 ---
 
 # Assertions

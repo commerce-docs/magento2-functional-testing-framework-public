@@ -1,7 +1,7 @@
 ---
 title: CLI commands - vendor/bin/mftf
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/commands/mftf/
-layout: migrated
+status: migrated
 ---
 
 # CLI commands: vendor/bin/mftf

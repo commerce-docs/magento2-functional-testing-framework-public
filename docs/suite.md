@@ -1,7 +1,7 @@
 ---
 title: Suites
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/suite/
-layout: migrated
+status: migrated
 ---
 
 # Suites

@@ -1,7 +1,7 @@
 ---
 title: Extending
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/extending/
-layout: migrated
+status: migrated
 ---
 
 # Extending

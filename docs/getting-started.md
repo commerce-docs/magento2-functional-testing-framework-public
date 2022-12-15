@@ -1,7 +1,7 @@
 ---
 title: Getting started
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/getting-started/
-layout: migrated
+status: migrated
 ---
 
 # Getting started

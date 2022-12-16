@@ -1,7 +1,7 @@
 ---
 title: Debugging
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/debugging/
-layout: migrated
+status: migrated
 ---
 
 # Debugging

@@ -1,7 +1,7 @@
 ---
 title: Section structure
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/
-layout: migrated
+status: migrated
 ---
 
 # Section structure

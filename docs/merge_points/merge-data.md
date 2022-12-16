@@ -1,7 +1,7 @@
 ---
 title: Merge data
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-data/
-layout: migrated
+status: migrated
 ---
 
 # Merge data

@@ -1,7 +1,7 @@
 ---
 title: Reporting
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/reporting/
-layout: migrated
+status: migrated
 ---
 
 # Reporting

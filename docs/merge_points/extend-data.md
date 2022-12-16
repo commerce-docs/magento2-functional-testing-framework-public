@@ -1,7 +1,7 @@
 ---
 title: Extend data entities
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-data/
-layout: migrated
+status: migrated
 ---
 
 # Extend data entities

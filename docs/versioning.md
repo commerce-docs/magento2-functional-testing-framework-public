@@ -1,7 +1,7 @@
 ---
 title: MFTF versioning schema
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/versioning/
-layout: migrated
+status: migrated
 ---
 
 # MFTF versioning schema

@@ -1,7 +1,7 @@
 ---
 title: Configuration
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/configuration/
-layout: migrated
+status: migrated
 ---
 
 # Configuration

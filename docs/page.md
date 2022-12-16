@@ -1,7 +1,7 @@
 ---
 title: Page structure
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/page/
-layout: migrated
+status: migrated
 ---
 
 # Page structure

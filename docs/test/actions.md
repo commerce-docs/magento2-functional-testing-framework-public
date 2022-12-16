@@ -1,7 +1,7 @@
 ---
 title: Test actions
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/actions/
-layout: migrated
+status: migrated
 ---
 
 # Test actions

@@ -1,7 +1,7 @@
 ---
 title: How to write good selectors
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/selectors/
-layout: migrated
+status: migrated
 ---
 
 # How To write good selectors

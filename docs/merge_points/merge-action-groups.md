@@ -1,7 +1,7 @@
 ---
 title: Merge action groups
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-action-groups/
-layout: migrated
+status: migrated
 ---
 
 # Merge action groups

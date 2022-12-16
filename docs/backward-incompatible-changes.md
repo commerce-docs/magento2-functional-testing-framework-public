@@ -1,7 +1,7 @@
 ---
 title: MFTF 3.0.0 backward incompatible changes
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/backward-incompatible-changes/
-layout: migrated
+status: migrated
 ---
 
 # MFTF 3.0.0 backward incompatible changes

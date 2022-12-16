@@ -1,7 +1,7 @@
 ---
 title: Using suites
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/using-suites/
-layout: migrated
+status: migrated
 ---
 
 # Using suites

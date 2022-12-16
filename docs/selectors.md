@@ -1,7 +1,7 @@
 ---
 title: Selectors
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/selectors/
-layout: migrated
+status: migrated
 ---
 
 ## Selectors

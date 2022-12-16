@@ -1,7 +1,7 @@
 ---
 title: Merge sections
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-sections/
-layout: migrated
+status: migrated
 ---
 
 # Merge sections

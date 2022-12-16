@@ -1,7 +1,7 @@
 ---
 title: Custom helpers
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/custom-helpers/
-layout: migrated
+status: migrated
 ---
 
 # Custom Helpers

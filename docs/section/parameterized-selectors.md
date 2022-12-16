@@ -1,7 +1,7 @@
 ---
 title: Parameterized selectors
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/parameterized-selectors/
-layout: migrated
+status: migrated
 ---
 
 # Parameterized selectors

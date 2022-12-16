@@ -1,7 +1,7 @@
 ---
 title: Extend action groups
 redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-action-groups/
-layout: migrated
+status: migrated
 ---
 
 # Extend action groups

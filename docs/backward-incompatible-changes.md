@@ -1,4 +1,6 @@
-# MFTF 2.7.0 backward incompatible changes
+---
+title: "MFTF 2.7.0 backward incompatible changes"
+---
 
 This page highlights backward incompatible changes from previous 2.6.x releases that have major impacts and require special instructions to ensure third-party tests continue working with Magento core tests.
 

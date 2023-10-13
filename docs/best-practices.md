@@ -1,4 +1,6 @@
-# Best practices
+---
+title: "Best practices"
+---
 
 Check out our best practices below to ensure you are getting the absolute most out of the Magento Functional Testing Framework.
 

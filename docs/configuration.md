@@ -1,4 +1,6 @@
-# Configuration
+---
+title: "Configuration"
+---
 
 The `*.env` file provides additional configuration for the Magento Functional Testing Framework (MFTF).
 To run the MFTF on your Magento instance, specify the basic configuration values.

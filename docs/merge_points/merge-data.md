@@ -1,4 +1,6 @@
-# Merge data
+---
+title: "Merge data"
+---
 
 Data objects can be merged to cover the needs of your extension.
 

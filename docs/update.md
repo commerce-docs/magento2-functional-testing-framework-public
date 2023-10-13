@@ -1,4 +1,6 @@
-# Update the Magento Functional Testing Framework
+---
+title: "Update the Magento Functional Testing Framework"
+---
 
 <div class="bs-callout bs-callout-info" markdown="1">
 Both Magento `2.2` and `2.3` supports MFTF `2.5.3` ([Find your version][] of the MFTF).

@@ -1,4 +1,6 @@
-# Troubleshooting
+---
+title: "Troubleshooting"
+---
 
 Having a little trouble with the MFTF? See some common errors and fixes below.
 

@@ -1,4 +1,6 @@
-# Extend action groups
+---
+title: "Extend action groups"
+---
 
 Extending an action group doesn't affect the existing action group.
 

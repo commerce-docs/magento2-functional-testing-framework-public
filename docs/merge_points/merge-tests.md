@@ -1,4 +1,6 @@
-# Merge tests
+---
+title: "Merge tests"
+---
 
 Tests can be merged to create a new test that covers new extension capabilities.
 

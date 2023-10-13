@@ -1,4 +1,6 @@
-# Extending
+---
+title: "Extending"
+---
 
 There are cases when you need to create many tests that are very similar to each other.
 For example, only one or two parameters (for example, URL) might vary between tests.

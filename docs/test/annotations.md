@@ -1,4 +1,6 @@
-# Annotations
+---
+title: "Annotations"
+---
 
 
 Annotations are essentially comments in the code. In PHP, they all are marked by a preceding `@` symbol.

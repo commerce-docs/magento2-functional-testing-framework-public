@@ -1,4 +1,6 @@
-# Introduction to the Magento Functional Testing Framework
+---
+title: "Introduction to the Magento Functional Testing Framework"
+---
 
 The Magento Functional Tesitng Framework (MFTF) is a framework used to perform automated end-to-end functional testing.
 

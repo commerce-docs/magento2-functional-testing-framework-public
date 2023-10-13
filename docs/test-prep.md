@@ -1,4 +1,6 @@
-# Preparing a test for MFTF
+---
+title: "Preparing a test for MFTF"
+---
 
 This tutorial demonstrates the process of converting a raw functional test into a properly abstracted test file, ready for publishing.
 

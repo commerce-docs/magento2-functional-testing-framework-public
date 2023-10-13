@@ -1,4 +1,6 @@
-# Extend data entities
+---
+title: "Extend data entities"
+---
 
 Extending a data entity does not affect the existing data entity.
 

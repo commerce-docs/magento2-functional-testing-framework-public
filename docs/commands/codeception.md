@@ -1,4 +1,6 @@
-# CLI commands: vendor/bin/codecept
+---
+title: "CLI commands: vendor/bin/codecept"
+---
 
 <div class="bs-callout bs-callout-warning" markdown="1">
 We do not recommend using Codeception commands directly as they can break the MFTF basic workflow.

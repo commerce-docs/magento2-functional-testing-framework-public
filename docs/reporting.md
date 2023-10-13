@@ -1,4 +1,6 @@
-# Reporting
+---
+title: "Reporting"
+---
 
 The Magento Functional Testing Framework provides two types of reporting:
 

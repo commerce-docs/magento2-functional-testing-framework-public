@@ -1,4 +1,6 @@
-# Extend tests
+---
+title: "Extend tests"
+---
 
 Tests can be extended to cover the needs of your extension.
 

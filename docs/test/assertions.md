@@ -1,4 +1,6 @@
-# Assertions
+---
+title: "Assertions"
+---
 
 
 Assertions serve to pass or fail the [test](../test.md#test-tag) if a condition is not met. These assertions will look familiar to you if you've used any other testing framework, like PHPUnit.

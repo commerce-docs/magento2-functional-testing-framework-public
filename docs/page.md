@@ -1,4 +1,6 @@
-# Page structure
+---
+title: "Page structure"
+---
 
 The MFTF uses a modified concept of [PageObjects], which models the testing areas of your page as objects within the code.
 This reduces occurrences of duplicated code and enables you to fix things quickly, in one place, when things change.

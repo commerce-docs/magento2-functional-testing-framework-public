@@ -1,4 +1,6 @@
-# Test
+---
+title: "Test"
+---
 
 Test cases in the Magento Functional Testing Framework (MFTF) are defined in XML as [`<tests>`].
 `<tests>` is a [Codeception test container][Codeception] that contains multiple individual tests with test metadata and before and after actions.

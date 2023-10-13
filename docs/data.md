@@ -1,4 +1,6 @@
-# Input testing data
+---
+title: "Input testing data"
+---
 
 The MFTF enables you to specify and use `<data>` entities defined in XML. Default `<data>` entities are provided for use and as templates for entity creation and manipulation.
 The following diagram shows the XML structure of an MFTF data object:

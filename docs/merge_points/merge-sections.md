@@ -1,4 +1,6 @@
-# Merge sections
+---
+title: "Merge sections"
+---
 
 Sections can be merged together to cover your extension.
 

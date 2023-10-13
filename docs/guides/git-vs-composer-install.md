@@ -1,4 +1,6 @@
-# Git vs Composer installation of Magento with MFTF
+---
+title: "Git vs Composer installation of Magento with MFTF"
+---
 
 Depending on how you plan to use Magnto code, there are different options for installing Magento.
 

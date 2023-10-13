@@ -1,4 +1,6 @@
-# Merge pages
+---
+title: "Merge pages"
+---
 
 Sections can be merged into pages to cover your extension.
 

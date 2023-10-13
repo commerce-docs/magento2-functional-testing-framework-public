@@ -1,4 +1,6 @@
-# Merge Points for testing extensions in MFTF
+---
+title: "Merge Points for testing extensions in MFTF"
+---
 
 The Magento Functional Testing Framework (MFTF) allows great flexibility when writing XML tests for extensions.
 All parts of tests can be used, reused, and merged to best suit your needs and cut down on needless duplication.

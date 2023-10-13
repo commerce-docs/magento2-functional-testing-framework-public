@@ -1,4 +1,6 @@
-# Suites
+---
+title: "Suites"
+---
 
 Suites are essentially groups of tests that run in specific conditions (preconditions and postconditions).
 They enable including, excluding, and grouping tests for a customized test run.

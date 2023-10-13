@@ -1,4 +1,6 @@
-# Test Modularity
+---
+title: "Test Modularity"
+---
 
 One of MFTF's most distinguishing functionalities is the framework's modularity.
 

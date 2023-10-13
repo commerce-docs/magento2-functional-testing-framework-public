@@ -1,4 +1,6 @@
-# Locator functions
+---
+title: "Locator functions"
+---
 
 ## Define Locator::functions in elements
 

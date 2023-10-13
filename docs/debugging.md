@@ -1,4 +1,6 @@
-# Debugging
+---
+title: "Debugging"
+---
 
 Debugging within the Magento Functional Testing Framework is helpful in identifying test bugs by allowing you to pause execution so that you may:
 

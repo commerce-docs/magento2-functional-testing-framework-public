@@ -1,4 +1,6 @@
-# Getting started
+---
+title: "Getting started"
+---
 
 <div class="bs-callout bs-callout-info" markdown="1">
 [Find your MFTF version][] of the MFTF.

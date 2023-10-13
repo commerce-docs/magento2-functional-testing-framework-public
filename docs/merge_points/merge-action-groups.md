@@ -1,4 +1,6 @@
-# Merge action groups
+---
+title: "Merge action groups"
+---
 
 An action group is a set of individual actions working together as a group.
 These action groups can be shared between tests and they also be modified to your needs.

@@ -1,4 +1,6 @@
-# Credentials
+---
+title: "Credentials"
+---
 
 When you test functionality that involves external services such as UPS, FedEx, PayPal, or SignifyD,
 use the MFTF credentials feature to hide sensitive [data][] like integration tokens and API keys.

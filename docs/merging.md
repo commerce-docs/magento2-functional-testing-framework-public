@@ -1,4 +1,6 @@
-# Merging
+---
+title: "Merging"
+---
 
 The MFTF allows you to merge test components defined in XML files, such as:
 

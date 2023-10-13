@@ -1,4 +1,6 @@
-# MFTF versioning schema
+---
+title: "MFTF versioning schema"
+---
 
 This document describes the versioning policy for the Magento Functional Testing Framework (MFTF), including the version numbering schema.
 

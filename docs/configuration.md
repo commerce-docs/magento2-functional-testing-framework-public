@@ -1,3 +1,9 @@
+---
+title: Configuration
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/configuration/
+status: migrated
+---
+
 # Configuration
 
 The `*.env` file provides additional configuration for the Magento Functional Testing Framework (MFTF).

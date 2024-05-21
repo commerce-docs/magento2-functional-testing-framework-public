@@ -1,3 +1,9 @@
+---
+title: Merge sections
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-sections/
+status: migrated
+---
+
 # Merge sections
 
 Sections can be merged together to cover your extension.

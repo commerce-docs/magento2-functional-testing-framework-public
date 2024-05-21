@@ -1,3 +1,9 @@
+---
+title: Action group best practices
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/action-group-best-practices/
+status: migrated
+---
+
 # Action Group Best Practices
 
 We strive to write tests using only action groups. Fortunately, we have built up a large set of action groups to get started. We can make use of them and extend them for our own specific needs. In some cases, we may never even need to write action groups of our own. We may be able to simply chain together calls to existing action groups to implement our new test case.

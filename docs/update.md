@@ -1,3 +1,9 @@
+---
+title: Update the Magento Functional Testing Framework
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/update/
+status: migrated
+---
+
 # Update the Magento Functional Testing Framework
 
 <div class="bs-callout bs-callout-info" markdown="1">

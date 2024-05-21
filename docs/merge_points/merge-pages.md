@@ -1,3 +1,9 @@
+---
+title: Merge pages
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-pages/
+status: migrated
+---
+
 # Merge pages
 
 Sections can be merged into pages to cover your extension.

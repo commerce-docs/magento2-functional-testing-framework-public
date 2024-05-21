@@ -1,3 +1,9 @@
+---
+title: Parameterized selectors
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/parameterized-selectors/
+status: migrated
+---
+
 # Parameterized selectors
 
 Use the following examples to create and use parameterized selectors in the MFTF.

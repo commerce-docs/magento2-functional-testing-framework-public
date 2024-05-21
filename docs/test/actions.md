@@ -1,3 +1,9 @@
+---
+title: Test actions
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/actions/
+status: migrated
+---
+
 # Test actions
 
 Actions in the MFTF allow you to automate different scenarios of Magento user's actions.
@@ -2440,7 +2446,7 @@ Attribute|Type|Use|Description
 #### Example
 
 ```xml
-<!-- Waits up to $timeout seconds for the given element to be clickable. If element doesn’t become clickable, a timeout exception is thrown. -->
+<!-- Waits up to $timeout seconds for the given element to be clickable. If element doesn't become clickable, a timeout exception is thrown. -->
 <waitForElementClickable selector="#changedElement" stepKey="waitForElementClickable"/>
 ```
 

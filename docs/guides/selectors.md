@@ -1,3 +1,9 @@
+---
+title: How to write good selectors
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/selectors/
+status: migrated
+---
+
 # How To write good selectors
 
 Selectors are the atomic unit of test writing. They fit into the hierarchy like this: MFTF tests make use of action groups > which are made up of actions > which interact with page objects > which contain elements > which are specified by selectors. Because they are fundamental building blocks, we must take care when writing them.
@@ -213,7 +219,7 @@ Similarly, the relative XPath selector is a double forward slash `//`. It is use
 Example:
 
 ```xpath
-//div[@class=’form-group’]//input[@id='user-message']
+//div[@class='form-group']//input[@id='user-message']
 ```
 
 In the `GOOD` example above, all `<div class='form-group'/>` elements in the DOM are matched first. Then all `<input id='user-message'/>` with `<div class='form-group'/>` as one of its parents are matched. The parent does not have to immediately precede it since it uses another double forward slash `//`.
@@ -247,7 +253,7 @@ Given this HTML:
 ```html
 <tr>
     <td>
-        <a href=“#”>Edit</a>
+        <a href="#">Edit</a>
     </td>
     <td>
         <div>Unique Value</div>

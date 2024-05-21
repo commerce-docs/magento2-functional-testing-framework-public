@@ -1,3 +1,9 @@
+---
+title: Using suites
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/using-suites/
+status: migrated
+---
+
 # Using suites
 
 With an increasing number of MFTF tests, it is important to have a mechanism to organize and consolidate them for ease-of-use.

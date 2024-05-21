@@ -1,3 +1,9 @@
+---
+title: Locator functions
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/section/locator-functions/
+status: migrated
+---
+
 # Locator functions
 
 ## Define Locator::functions in elements

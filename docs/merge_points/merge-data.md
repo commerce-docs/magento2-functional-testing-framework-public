@@ -1,3 +1,9 @@
+---
+title: Merge data
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-data/
+status: migrated
+---
+
 # Merge data
 
 Data objects can be merged to cover the needs of your extension.

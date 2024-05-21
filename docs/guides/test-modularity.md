@@ -1,3 +1,9 @@
+---
+title: Test modularity
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-modularity/
+status: migrated
+---
+
 # Test Modularity
 
 One of MFTF's most distinguishing functionalities is the framework's modularity.

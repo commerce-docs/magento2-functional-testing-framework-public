@@ -1,3 +1,9 @@
+---
+title: Extend tests
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-tests/
+status: migrated
+---
+
 # Extend tests
 
 Tests can be extended to cover the needs of your extension.

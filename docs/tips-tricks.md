@@ -1,3 +1,9 @@
+---
+title: Tips and tricks
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/tips-tricks/
+status: migrated
+---
+
 # Tips and Tricks
 
 Sometimes, little changes can make a big difference in your project. Here are some test writing tips to keep everything running smoothly.

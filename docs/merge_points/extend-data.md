@@ -1,3 +1,9 @@
+---
+title: Extend data entities
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-data/
+status: migrated
+---
+
 # Extend data entities
 
 Extending a data entity does not affect the existing data entity.

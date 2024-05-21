@@ -1,3 +1,9 @@
+---
+title: MFTF versioning schema
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/versioning/
+status: migrated
+---
+
 # MFTF versioning schema
 
 This document describes the versioning policy for the Magento Functional Testing Framework (MFTF), including the version numbering schema.

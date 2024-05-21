@@ -1,3 +1,9 @@
+---
+title: Extending
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/extending/
+status: migrated
+---
+
 # Extending
 
 There are cases when you need to create many tests that are very similar to each other.

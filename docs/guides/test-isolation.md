@@ -1,3 +1,9 @@
+---
+title: Test isolation
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/test-isolation/
+status: migrated
+---
+
 # Test Isolation
 
 Because MFTF is a framework for testing a highly customizable and ever changing application, MFTF tests need to be properly isolated.

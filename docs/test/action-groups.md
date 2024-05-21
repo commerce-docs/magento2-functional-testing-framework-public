@@ -1,3 +1,9 @@
+---
+title: Action groups
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/action-groups/
+status: migrated
+---
+
 # Action groups
 
 In the MFTF, you can re-use a group of [actions][], such as logging in as an administrator or a customer, declared in an XML file when you need to perform the same sequence of actions multiple times.

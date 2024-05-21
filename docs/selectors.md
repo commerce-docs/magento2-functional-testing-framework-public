@@ -1,3 +1,9 @@
+---
+title: Selectors
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/selectors/
+status: migrated
+---
+
 ## Selectors
 
 These guidelines should help you to write high quality selectors.

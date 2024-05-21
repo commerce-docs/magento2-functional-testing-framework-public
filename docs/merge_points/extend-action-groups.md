@@ -1,3 +1,9 @@
+---
+title: Extend action groups
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/extend-action-groups/
+status: migrated
+---
+
 # Extend action groups
 
 Extending an action group doesn't affect the existing action group.

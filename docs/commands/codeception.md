@@ -1,3 +1,9 @@
+---
+title: CLI commands - vendor/bin/codecept
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/commands/codeception/
+status: migrated
+---
+
 # CLI commands: vendor/bin/codecept
 
 <div class="bs-callout bs-callout-warning" markdown="1">

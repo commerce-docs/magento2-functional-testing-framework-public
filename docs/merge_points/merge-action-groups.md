@@ -1,3 +1,9 @@
+---
+title: Merge action groups
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/merge-points/merge-action-groups/
+status: migrated
+---
+
 # Merge action groups
 
 An action group is a set of individual actions working together as a group.

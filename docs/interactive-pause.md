@@ -1,3 +1,9 @@
+---
+title: Interactive pause
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/interactive-pause/
+status: migrated
+---
+
 # Interactive Pause
 
 It can be difficut to write a successful test on the first attempt. You will need to try different commands, with different arguments, before you find the correct path.

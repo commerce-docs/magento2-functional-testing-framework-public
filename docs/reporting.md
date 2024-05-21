@@ -1,3 +1,9 @@
+---
+title: Reporting
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/reporting/
+status: migrated
+---
+
 # Reporting
 
 The Magento Functional Testing Framework provides two types of reporting:

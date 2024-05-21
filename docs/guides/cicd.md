@@ -1,3 +1,9 @@
+---
+title: How to use MFTF in CICD
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/cicd/
+status: migrated
+---
+
 # How to use MFTF in CICD
 
 To integrate MFTF tests into your CICD pipeline, it is best to start with the conceptual flow of the pipeline code.

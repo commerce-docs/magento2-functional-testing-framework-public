@@ -1,3 +1,9 @@
+---
+title: Git vs Composer installation of Magento with MFTF
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/git-vs-composer-install/
+status: migrated
+---
+
 # Git vs Composer installation of Magento with MFTF
 
 Depending on how you plan to use Magnto code, there are different options for installing Magento.

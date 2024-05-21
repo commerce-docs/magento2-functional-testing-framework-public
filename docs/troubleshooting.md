@@ -1,3 +1,9 @@
+---
+title: Troubleshooting
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/troubleshooting/
+status: migrated
+---
+
 # Troubleshooting
 
 Having a little trouble with the MFTF? See some common errors and fixes below.

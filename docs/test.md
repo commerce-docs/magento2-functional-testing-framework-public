@@ -1,3 +1,9 @@
+---
+title: Test
+redirect_to: https://developer.adobe.com/commerce/testing/functional-testing-framework/test/
+status: migrated
+---
+
 # Test
 
 Test cases in the Magento Functional Testing Framework (MFTF) are defined in XML as [`<tests>`].
